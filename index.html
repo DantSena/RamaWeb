@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata & Tugas - Ahmad Guspratama</title>
+  <link href="fotoku.jpg" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
+
+    .name {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .section-title::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 30px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 2px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .info-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      border-left: 4px solid #667eea;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      color: #666;
+    }
+
+    .task-section {
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      color: white;
+      padding: 40px;
+    }
+
+    .task-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .task-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .task-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .task-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .task-icon {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .task-name {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .task-description {
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #667eea;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 768px) {
+      .name {
+        font-size: 2em;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header/Profile Section -->
+    <div class="card">
+      <div class="header">
+        <img src="fotoku.jpg" alt="Foto Ahmad Guspratama" class="profile-img">
+        <h1 class="name">Ahmad Guspratama</h1>
+        <p class="subtitle">Siswa | Kreatif | Siap Berkembang</p>
+      </div>
+      
+      <div class="content">
+        <div class="section">
+          <h2 class="section-title">Informasi Pribadi</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Alamat</div>
+              <div class="info-value">Ds. Sekaran, RT 02, RW 05, Kec. Loceret, Kab. Nganjuk</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Kelompok</div>
+              <div class="info-value">Kelompok 1</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Tanggal Lahir</div>
+              <div class="info-value">30 Agustus 2008</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">WhatsApp</div>
+              <div class="info-value">0857 0491 7149</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Email</div>
+              <div class="info-value">ahmadguspratama30@gmail.com</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Instagram</div>
+              <div class="info-value">@ahmadgus_pratama</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tugas Section -->
+    <div class="card">
+      <div class="task-section">
+        <h2 class="task-title">📚 Tugas Penempuhan</h2>
+        <div class="task-grid">
+          <div class="task-card">
+            <div class="task-icon">📊</div>
+            <h3 class="task-name">Infografis / Poster PHBN</h3>
+            <p class="task-description">
+              "Mengenai PHBN Smasa"
+            </p>
+            <a href="https://drive.google.com/drive/folders/1" class="btn" target="_blank">
+              Buka di Google Drive
+            </a>
+          </div>
+          
+          <div class="task-card">
+            <div class="task-icon">📝</div>
+            <h3 class="task-name">Video Kelompok</h3>
+            <p class="task-description">
+              "Mengenai Video Kelompok 1"
+            </p>
+            <a href="https://drive.google.com/drive/folders/2" class="btn" target="_blank">
+              Buka di Google Drive
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Ahmad Guspratama. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
